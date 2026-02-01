@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mindset</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cloud" style="top: 150px; left: -50px;">
+        <svg viewBox="0 0 100 60" class="cloud-svg">
+            <path d="M20,40 Q10,40 10,30 Q10,10 30,10 Q40,0 60,10 Q80,0 90,20 Q100,20 100,30 Q100,40 80,40 Q80,50 60,50 Q40,50 30,40 Z" />
+        </svg>
+    </div>
+    <div class="cloud" style="bottom: 100px; right: -50px; animation-delay: 2s;">
+        <svg viewBox="0 0 100 60" class="cloud-svg">
+            <path d="M20,40 Q10,40 10,30 Q10,10 30,10 Q40,0 60,10 Q80,0 90,20 Q100,20 100,30 Q100,40 80,40 Q80,50 60,50 Q40,50 30,40 Z" />
+        </svg>
+    </div>
+
+    <header>
+        <div class="logo-section">
+            <div class="logo-wrapper">
+                <div class="sharingan-ring"></div>
+                <img src="logo.jpeg" alt="Logo" class="logo-img">
+            </div>
+            <div class="brand-name">Student Mindset</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="title-box">
+            <h1>Wake Up To Reality</h1>
+        </div>
+        
+        <p>
+            "People live their lives bound by what they accept as correct and true. 
+            That is how they define 'Reality'. But what does it mean to be a student correctly?"
+        </p>
+
+        <div class="cards-area">
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon-symbol">◎</div>
+                    <div class="platform-name">Instagram</div>
+                    <div class="handle">@studentmindset.daily</div>
+                    <div class="desc">
+                        Enter the visual Genjutsu. Daily motivation to control your mind.
+                    </div>
+                    <a href="https://instagram.com/studentmindset.daily" class="btn" target="_blank">ACTIVATE TSUKUYOMI</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="icon-symbol">☸</div>
+                    <div class="platform-name">YouTube</div>
+                    <div class="handle">@studentmindsetdaily</div>
+                    <div class="desc">
+                        The flames of knowledge that never extinguish. Watch the path.
+                    </div>
+                    <a href="https://www.youtube.com/@studentmindsetdaily" class="btn" target="_blank">IGNITE AMATERASU</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span class="quote">"It is foolish to fear what we have yet to see and know."</span>
+        <span class="author">- Itachi Uchiha</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

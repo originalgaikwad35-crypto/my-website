@@ -1,0 +1,27 @@
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // 1. Fade-in effect
+    document.body.classList.add('loaded');
+
+    // 2. 3D Tilt Effect on Cards
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Calculate rotation
+            const xRotation = -((y - rect.height / 2) / 20);
+            const yRotation = (x - rect.width / 2) / 20;
+
+            card.style.transform = `perspective(500px) scale(1.05) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            // Reset position
+            card.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)';
+        });
+    });
+});
